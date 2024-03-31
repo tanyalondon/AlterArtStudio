@@ -1,6 +1,7 @@
 /*Imported Goodle font*/
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap')
+/*@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap')*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rouge+Script&display=swap')
 </style>
 /*More general styles override use with wildcard*/
 * {
@@ -16,12 +17,16 @@ body {
     /*so element show under one another*/
     flex-direction: column;
     color: #3a3a3a;
-    font-family: "Rouge Script", cursive;
+    font-family: "Dancing Script", cursive;
 
 }
 /* Header styles*/
 header {
     background-color: lightcoral;
+}
+
+h1 {
+    font-family: "Dancing Script";
 }
 
 /* Main content styles*/
