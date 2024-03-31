@@ -27,13 +27,35 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
     font-family: "Dancing Script", cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+    text-align: center;
+}
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
 }
 
-/* Main content styles*/
+menu > li {
+    /*add some spacing betweem items*/
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: :1px solid #3a3a3a;
+}
+    /* Main content styles*/
 main {
     background-color: lightblue;
     /*take up ll surplus space to push footer down*/
