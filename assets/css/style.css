@@ -68,19 +68,21 @@ nav {
     left: 0;
     padding: 0 1rem;
     /*startat bottom of parent element ie. header*/
-    top:100%;
+    top: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     /*nav bar hidden by defaults until user clicked*/
     display: none;
 }
 
-.nav-toggle-label {
-    font-size: 2rem;
-}
 
 /*hidden chekbox*/
 #nav-toggle {
     display: none;
+}
+
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Nav toggle element*/
@@ -92,8 +94,7 @@ nav {
 main {
     /*push down to be ale to see content*/
     background-color: lightblue;
-
-    /*take up ll surplus space to push footer down*/
+     /*take up ll surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
 }
@@ -101,4 +102,27 @@ main {
 /* Footer styles*/
 footer {
     background-color: orange;
+}
+
+/* Media query:tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /*Header*/
+    nav {
+        display: block;
+        box-shadow: none;
+        position: relative;
+        padding-right: 1 rem;
+        width: fit-content;
+    }
+    
+    #menu {
+        display: flex;
+    }
+
+    menu >li {
+        padding-left: 2rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
 }
