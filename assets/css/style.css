@@ -22,14 +22,18 @@ body {
 }
 /* Header styles*/
 header {
+    display: flex;
     background-color: #ffffff;
+    justify-content: space-between;
     padding: 0 1rem;
     position: fixed;
+    align-items: baseline;
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
 }
 header a {
+    
     text-decoration: none;
     color: inherit;
 }
@@ -59,18 +63,39 @@ menu > li {
 /*Dropdown toggle with styles for navigation bar*/
 nav {
     position: absolute;
-    color: #ffffff;
+    background-color: #ffffff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
+    /*startat bottom of parent element ie. header*/
+    top:100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    /*nav bar hidden by defaults until user clicked*/
     display: none;
 }
-    /* Main content styles*/
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/*hidden chekbox*/
+#nav-toggle {
+    display: none;
+}
+
+/* Nav toggle element*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+/* Main content styles*/
 main {
+    /*push down to be ale to see content*/
     background-color: lightblue;
+
     /*take up ll surplus space to push footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer styles*/
