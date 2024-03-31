@@ -1,3 +1,7 @@
+/*Imported Goodle font*/
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap')
+</style>
 /*More general styles override use with wildcard*/
 * {
     padding: 0;
@@ -12,6 +16,7 @@ body {
     /*so element show under one another*/
     flex-direction: column;
     color: #3a3a3a;
+    font-family: "Rouge Script", cursive;
 
 }
 /* Header styles*/
