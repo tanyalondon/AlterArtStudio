@@ -137,6 +137,18 @@ main {
     padding: 20px 10% 0 10%;
 }
 
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.4);
+    padding: 30px;
+
+}
+
+#signup-form > h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
 /* Footer styles*/
 #social-networks {
     text-align: center;
