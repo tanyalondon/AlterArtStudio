@@ -37,7 +37,6 @@ header {
     display: flex;
     background-color: #ffffff;
     justify-content: space-between;
-    /*padding: 0 1rem;*/
     position: fixed;
     align-items: baseline;
     z-index: 99;
@@ -51,8 +50,9 @@ header a {
     color: inherit;
 }
 
-
+/*navigation menu*/
 #menu {
+    /*larger font so it stands out*/
     font-size: 110%;
     letter-spacing: 1px;
     list-style-type: none;
@@ -68,6 +68,7 @@ menu > li {
 }
 
 /*Dropdown toggle with styles for navigation bar*/
+/*allows to free up some screen space when not in use*/
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -99,9 +100,12 @@ nav {
 
 /* Main content styles*/
 main {
-    
+    /*Allow flex properties for children*/
+    display:flex;
+    flex-direction: column;
      /*take up all surplus space to push footer down*/
     flex: 1 0 auto;
+    /*add space above so content not covered by header*/
     margin-top: 47px;
 }
 
@@ -123,6 +127,14 @@ main {
     padding-left: 10px;
     width: 80%;
 
+}
+
+#signup {
+    background-image: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10% 0 10%;
 }
 
 /* Footer styles*/
@@ -157,7 +169,7 @@ main {
     }
 
     menu >li {
-        padding-left: 2rem;
+        padding-left: 3rem;
     }
     .nav-toggle-label {
         display: none;
