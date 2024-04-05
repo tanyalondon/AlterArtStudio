@@ -39,27 +39,31 @@
     <main>
         <section id="signup">
             <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
-                <h2>Get more information on our classes and events</h2>
+                <h2>Get in touch!</h2>
                 <label for="first_name">First Name</label>
                 <input type="text" name="first_name" id="first_name" class="text-input" required>
                 <br>
                 <label for="last_name">Last Name</label>
                 <input type="text" name="last_name" id="last_name" class="text-input" required>
                 <br>
-                <label for="email_address">Email Address</label>
+                <label for="email_address">Email</label>
                 <input type="email" name="email_address" id="email_address" class="text-input" required>
                 <br>
                 <div class="check-items">
                     <div>
-                        <label for="paint">Painting</label>
+                        <label for="news">Newsletter</label>
+                        <input type="checkbox" name="info_preference" id="news" value="news" required>
+                    </div>
+                    <div>
+                        <label for="paint">Painting sessions</label>
                         <input type="checkbox" name="info_preference" id="paint" value="paint" required>
                     </div>
                     <div>
-                        <label for="model">Live Model Drawing</label>
+                        <label for="model">Model Drawing</label>
                         <input type="checkbox" name="info_preference" id="model" value="model" required>
                     </div>
                     <div>
-                        <label for="child">Parent and child art class</label>
+                        <label for="child">Parent & child class</label>
                         <input type="checkbox" name="info_preference" id="child" value="child" required>
                     </div>
                 </div>
