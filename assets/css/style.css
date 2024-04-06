@@ -88,6 +88,9 @@ nav {
     display: none;
 }
 
+element.style {
+    margin-right: auto;
+}
 
 .nav-toggle-label {
     font-size: 1rem;
@@ -133,6 +136,7 @@ main {
     width: 90%;
     margin: 10px auto;
 }
+
 #sessions h2 {
     margin-bottom: 20px;
     text-align: left;
@@ -152,6 +156,17 @@ main {
 hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+#times {
+    background: url("../images/sched_image.webp") no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #ffffff;
+    padding: 15px;
 }
 
 #signup {
