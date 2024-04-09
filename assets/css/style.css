@@ -204,77 +204,73 @@ hr {
 }
 
 /*Works/Gallery page*/
-#works {
-    background-size: cover;
-    background-position: 75%;
-    flex-grow: 1;
-    padding: 20px 10% 0 10%;
+
+.container {
+  height:80vh;
+  width: 100%;
+  position: relative;
+
 }
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+
 img {
-    display: block;
-    max-width: 100%;
-    background-size: contain;
-    background-size: cover;
-    background-position: 75%;
-    flex-grow: 1;
-    padding: 20px 10% 0 10%;
-  }
-  
-.wrapper {
-    overflow: hidden;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-gap: 10px;
-    background-size: cover;
-    background-position: 75%;
-    flex-grow: 1;
-    padding: 20px 10% 0 10%;
-  }
-  
-.gallery {
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    background-size: contain;
-    background-size: cover;
-    background-position: 75%;
-    flex-grow: 1;
-    padding: 20px 10% 0 10%;
-  }
-  
-.gallery__img {
-    scroll-snap-align: start;
-    margin-bottom: 10px;
-    /*min-height: 100vh;*/
-    object-fit: cover;
-    background-size: cover;
-    background-position: 75%;
-    flex-grow: 1;
-    padding: 20px 10% 0 10%;
-  }
-  
-.lil-nav {
-    overflow-y: scroll;
-    overflow-x: hidden;
-  
-    a {
-      height: 200px;
-      display: flex;
-      margin-bottom: 10px;
-    }
-  }
-  
-  .lil-nav__img {
-    object-fit: cover;
-    filter: saturate(0);
-    transition: 0.3s ease all;
-  
-    &:hover {
-      transform: scale(1.05);
-      filter: saturate(1);
-    }
-  }
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  position:absolute;
+  top:0;
+  left: 0;
+  animation: fade 27s ease-in-out inifinite alternate;
+
+}
+
+img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+img:nth-of-type(2) {
+  animation-delay: 3s;
+}
+
+img:nth-of-type(3) {
+  animation-delay: 6s;
+}
+img:nth-of-type(4) {
+  animation-delay: 9s;
+}
+img:nth-of-type(5) {
+  animation-delay: 12s;
+} 
+img:nth-of-type(6) {
+  animation-delay: 15s;
+} 
+img:nth-of-type(7) {
+  animation-delay: 18s;
+} 
+img:nth-of-type(8) {
+  animation-delay: 21s;
+} 
+img:nth-of-type(9) {
+  animation-delay: 24s;
+} 
+
+
 
 /* Footer styles*/
 #social-networks {
@@ -320,10 +316,10 @@ img {
     }
 
     /* Main content*/
-main {
+    main {
     /*Bring down main content to fit larger header*/
     margin-top: 79px;
-    }
+      }
     
 }
 
@@ -331,87 +327,6 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-
-    $large: 1200px;
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
+  }
+  
     
-    .wrapper {
-      overflow: hidden;
-      height: 100vh;
-      display: grid;
-      grid-template-rows: 2fr 1fr;
-      grid-gap: 10px;
-    
-      @media screen and (min-width: $large) {
-        grid-template-columns: 1fr 5fr;
-        grid-template-rows: auto;
-      }
-    }
-    
-    .gallery {
-      overflow-x: scroll;
-      overflow-y: hidden;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      display: flex;
-    
-      @media screen and (min-width: $large) {
-        display: block;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        scroll-snap-type: y mandatory;
-      }
-    }
-    
-    .gallery__img {
-      scroll-snap-align: start;
-      margin-bottom: 10px;
-      min-width: 100vw;
-      object-fit: cover;
-    
-      @media screen and (min-width: $large) {
-        min-width: auto;
-        min-height: 100vh;
-      }
-    }
-    
-    .lil-nav {
-      overflow-x: scroll;
-      overflow-y: hidden;
-      display: flex;
-      grid-row-start: 2;
-    
-      @media screen and (min-width: $large) {
-        overflow-y: scroll;
-        overflow-x: hidden;
-        display: block;
-        grid-row-start: auto;
-      }
-    
-      a {
-        display: flex;
-        min-width: 45vw;
-        margin-right: 10px;
-    
-        @media screen and (min-width: $large) {
-          margin-bottom: 10px;
-          min-height: 200px;
-          min-width: 100%;
-        }
-      }
-    }
-    
-    .lil-nav__img {
-      object-fit: cover;
-      filter: saturate(0);
-      transition: 0.3s ease all;
-    
-      &:hover {
-        transform: scale(1.05);
-        filter: saturate(1);
-      }
-    }
